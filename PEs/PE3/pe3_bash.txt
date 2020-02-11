@@ -1,0 +1,26 @@
+JC Abrahamson
+
+1. pwd
+2. touch empty.txt
+3. ls empty*
+4. ls *.txt | wc -l
+5. echo "JC Abrahamson" >> empty.txt
+6. mv empty.txt notempty.txt
+7. mkdir pe3_bash
+8. cd pe3_bash
+9. mkdir ../pe3_bash_number2
+10. cd ../pe3_bash_number2
+11. moves back through command history
+12. moves forward through command history
+13. brings up reverse i search which lets you find old 
+    commands by typing in the letter it starts with
+14. Vim and Nano
+    Vim:
+    1. vim /path/to/file
+    2. Esc + :w
+    3. Ctrl + z
+    Nano:
+    1. nano filename
+    2. Crtrl + o
+    3. Ctrl + x
+15. These text editors are: Always Available and is Free and Open Source

@@ -1,0 +1,59 @@
+Overloading and Overriding
+
+Overloading - when you have multiple functions with the same namespace
+void Donate(Book b);
+void Donate(Book b, int copies);
+
+overriding - providing a new version of some fucntion with a specifiic signature
+
+bool operator == const Book * other
+
+bool Book::operator==(const Book & b){
+    return title == b.title && autghor == b.author;
+}
+
+
+const
+("Unchangable")
+paramerters - function cant modify the params value
+variables - value cant change
+pointer - location that it is pointing to cant be changed
+methods - method cant modify the object on which it is called
+
+use const type & as input paramters in general
+use const methods for getters and other methods that shouldnt change the object instance
+
+const int x = 7;
+
+
+Constructors
+
+- in c++, all classes have a default, 0 param constructor provided UNTIL you write ANY Constructor yourself
+- if we initialize an array of some class:
+    Point parray[3]: //will call default 0param Point constructor three times
+
+initialization lists: //these are faster and preferred
+Point::Point(const int x, const int y):
+    x_(x),
+    y_(y),
+    z_(0) {
+        //regular body of constructor
+    }
+
+
+
+enums (enumerations)
+__
+- set of related named constants
+- creating your own (mini) custom type
+- IE define a color typede, month type, 
+
+enum class Name{val1, val2, ... valN};
+
+- why class?
+    - it prevents c++ from being pvereager at converting enums to ints
+
+Name var = Name::value1;
+Day today = Day::Tuesday;
+
+if(var == Name::value223)
